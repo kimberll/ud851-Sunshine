@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO (9) Create a method called showErrorMessage that will hide the weather data and show the error message
     private void showErrorMessage() {
-        errorMessageDisplay.setVisibility(View.VISIBLE);
         mWeatherTextView.setVisibility(View.INVISIBLE);
+        errorMessageDisplay.setVisibility(View.VISIBLE);
     }
 
 
@@ -141,8 +141,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             // TODO (10) If the weather data was null, show the error message
-            showErrorMessage();
-
+            else {
+                showErrorMessage();
+            }
         }
     }
 
